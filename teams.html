@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PSM Badminton Tournament 2025</title>
+
+<style>
+/* ================= BODY ================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+}
+
+/* ================= HEADER ================= */
+.header-bar {
+  background: linear-gradient(135deg, #002f6c, #005eff);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 90px;
+  margin-right: 20px;
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ================= NAV ================= */
+.navbar {
+  background: rgba(0,0,0,0.35);
+  padding: 12px 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: #00b4ff;
+  color: #002f6c;
+}
+
+/* ================= MAIN CARD ================= */
+.container {
+  background: white;
+  color: black;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+h2 {
+  color: #003f7f;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 32px;
+}
+
+/* ================= TEAM STYLE ================= */
+.team {
+  border: 3px solid #003f7f;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+/* CHANGE TEAM COLOR HERE */
+.team-title {
+  background: #0072ff;  
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.team-body {
+  padding: 20px;
+  background: #f7fbff;
+}
+
+.team-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 10px auto 20px;
+  display: block;
+  border-radius: 12px;
+  background: #e3eeff;
+  padding: 10px;
+}
+
+.team-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #003f7f;
+}
+
+/* ================= PLAYER GRID ================= */
+.players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.player-box {
+  background: white;
+  border: 2px solid #0072ff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+}
+
+.player-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background: #ddeaff;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ================= MATCH TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+th {
+  background: #003f7f;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+}
+
+td {
+  border: 1px solid #003f7f;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  background: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header-bar">
+  <div class="header-left">
+    <img src="psm_logo.png" alt="Logo">
+    <div class="header-title">PSM Badminton Tournament 2025</div>
+  </div>
+</div>
+
+<!-- ===== NAV BAR ===== -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="teams.html">Teams</a>
+  <a href="matchSchedule.html">Schedule</a>
+  <a href="matchScore.html">Results</a>
+  <a href="rules.html">Rules</a>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="container">
+
+<h2>Teams & Players</h2>
+
+<!-- ================= TEAM 1 ================= -->
+<div class="team">
+  <div class="team-title">TEAM 1: HARDATA</div>
+  <div class="team-body">
+
+    <img src="team1_logo.png" alt="Team 1 Logo" class="team-logo">
+
+    <div class="team-section-title">Male Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Mahdee Faroozaan</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Ahmed Mohamed</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Shagor Shil</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Zian Ibrahim</div>
+    </div>
+
+    <div class="team-section-title">Female Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Hawwa Aisha Shareef</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Fathimath Hudha</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Mariyam Alya</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Zulfa Abdul Raheem</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TEAM 2 ================= -->
+<div class="team">
+  <div class="team-title">TEAM 2: LIVE FEED</div>
+  <div class="team-body">
+
+    <img src="team2_logo.png" alt="Team 2 Logo" class="team-logo">
+
+    <div class="team-section-title">Male Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Ahmed Athoof</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Ali Hilmy</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Mohamed Jumail</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Ismail Abdul Raheem</div>
+    </div>
+
+    <div class="team-section-title">Female Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Nadheema Mohamed</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Wafeega Hamidh</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Fathimath Zumla</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Ashida Abdul Kareem</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TEAM 3 ================= -->
+<div class="team">
+  <div class="team-title">TEAM 3: APPRAISAL</div>
+  <div class="team-body">
+
+    <img src="team3_logo.png" alt="Team 3 Logo" class="team-logo">
+
+    <div class="team-section-title">Male Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Mohamed Rameez</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Ibrahim Shafraz</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Ali Waheed (Tech)</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Shahin Miah</div>
+    </div>
+
+    <div class="team-section-title">Female Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Aishath Naseem</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Aishath Lam'aa Hassan</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Fathimath Shifa</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Aishath Hany</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TEAM 4 ================= -->
+<div class="team">
+  <div class="team-title">TEAM 4: FOCUS OUT </div>
+  <div class="team-body">
+
+    <img src="team4_logo.png" alt="Team 4 Logo" class="team-logo">
+
+    <div class="team-section-title">Male Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Ismail Rameez</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Ismail Ashraf</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Azumee Adam Naseer</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Hussain Ameen Naseer</div>
+    </div>
+
+    <div class="team-section-title">Female Players</div>
+    <div class="players">
+      <div class="player-box"><div class="player-image">Player Image</div>Fathimath Waheedha</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Aminath Abdulla</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Mariyam Shaneeza</div>
+      <div class="player-box"><div class="player-image">Player Image</div>Waheedha Abdul Rahman</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
