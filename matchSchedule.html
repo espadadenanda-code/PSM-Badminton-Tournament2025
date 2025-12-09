@@ -2,18 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PSM Badminton Tournament 2025</title>
-
+<title>PSM Badminton Tournament 2025 - Schedule</title>
 <style>
-/* ================= BODY ================= */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #0072ff, #00c6ff);
   color: white;
 }
-
-/* ================= HEADER ================= */
 .header-bar {
   background: linear-gradient(135deg, #002f6c, #005eff);
   padding: 20px 40px;
@@ -22,30 +18,24 @@ body {
   justify-content: space-between;
   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
-
 .header-left {
   display: flex;
   align-items: center;
 }
-
 .header-left img {
   height: 90px;
   margin-right: 20px;
 }
-
 .header-title {
   font-size: 30px;
   font-weight: bold;
 }
-
-/* ================= NAV ================= */
 .navbar {
   background: rgba(0,0,0,0.35);
   padding: 12px 40px;
   display: flex;
   justify-content: flex-end;
 }
-
 .navbar a {
   color: white;
   text-decoration: none;
@@ -56,13 +46,10 @@ body {
   border-radius: 8px;
   transition: 0.3s;
 }
-
 .navbar a:hover {
   background: #00b4ff;
   color: #002f6c;
 }
-
-/* ================= MAIN CARD ================= */
 .container {
   background: white;
   color: black;
@@ -72,120 +59,50 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
-
 h2 {
-  color: #003f7f;
   text-align: center;
-  margin-bottom: 35px;
+  color: #003f7f;
   font-size: 32px;
+  margin-bottom: 30px;
 }
-
-/* ================= TEAM STYLE ================= */
-.team {
-  border: 3px solid #003f7f;
+.match-block {
+  background: #eef7ff;
+  padding: 20px;
   border-radius: 15px;
-  margin-bottom: 25px;
-  overflow: hidden;
+  margin-bottom: 35px;
+  border-left: 6px solid #0072ff;
 }
-
-/* CHANGE TEAM COLOR HERE */
-.team-title {
-  background: #0072ff;  
-  color: white;
-  padding: 15px;
+.match-header {
   font-size: 22px;
   font-weight: bold;
-  text-align: center;
-  letter-spacing: 1px;
+  color: #004a99;
+  margin-bottom: 10px;
 }
-
-.team-body {
-  padding: 20px;
-  background: #f7fbff;
-}
-
-.team-logo {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin: 10px auto 20px;
-  display: block;
-  border-radius: 12px;
-  background: #e3eeff;
-  padding: 10px;
-}
-
-.team-section-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 15px 0 10px;
-  color: #003f7f;
-}
-
-/* ================= PLAYER GRID ================= */
-.players {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-}
-
-.player-box {
-  background: white;
-  border: 2px solid #0072ff;
-  border-radius: 12px;
-  text-align: center;
-  padding: 10px;
-}
-
-.player-image {
-  width: 100%;
-  height: 150px;
-  border-radius: 10px;
-  background: #ddeaff;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #444;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* ================= MATCH TABLE ================= */
-table {
+.match-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 30px;
+  margin-top: 10px;
 }
-
-th {
-  background: #003f7f;
-  color: white;
-  padding: 14px;
-  font-size: 18px;
-}
-
-td {
-  border: 1px solid #003f7f;
-  padding: 12px;
-  text-align: center;
+.match-table th, .match-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
   font-size: 16px;
-  background: white;
+}
+.match-table th {
+  background: #dbeaff;
+  color: #003f7f;
+  font-weight: bold;
 }
 </style>
 </head>
-
 <body>
-
-<!-- ===== HEADER ===== -->
 <div class="header-bar">
   <div class="header-left">
     <img src="psm_logo.png" alt="Logo">
     <div class="header-title">PSM Badminton Tournament 2025</div>
   </div>
 </div>
-
-<!-- ===== NAV BAR ===== -->
 <div class="navbar">
   <a href="index.html">Home</a>
   <a href="teams.html">Teams</a>
@@ -194,70 +111,140 @@ td {
   <a href="rules.html">Rules</a>
 </div>
 
-<!-- ================= MATCH SCHEDULE ================= -->
 <div class="container">
 <h2>Match Schedule</h2>
 
-<table>
-  <tr>
-    <th>Match No</th>
-    <th>Match Day</th>
-    <th>Date</th>
-    <th>Time</th>
-    <th>Teams</th>
-  </tr>
-  <tr>
-    <td>Match 1</td>
-        <td>Day 1</td>
-        <td>Will be updated</td>
-        <td>Will be updated</td>
-        <td>Team 1 vs Team 2</td>
-  </tr>
-  <tr>
-    <td>Match 2</td>
-        <td>Day 1</td>
-        <td>Will be updated</td>
-        <td>Will be updated</td>
-        <td>Team 3 vs Team 4</td>
-  </tr>
-  <tr>
-    <td>Match 3</td>
-        <td>Day 1</td>
-        <td>Will be updated</td>
-        <td>Will be updated</td>
-        <td>Team 1 vs Team 3</td>
-  </tr>
+<!-- Example Match Block -->
+<div class="match-block">
+  <div class="match-header">Match 1: Team 1 vs Team 2</div>
+  <table class="match-table">
     <tr>
-    <td>Match 4</td>
-        <td>Day 1</td>
-        <td>Will be updated</td>
-        <td>Will be updated</td>
-        <td>Team 2 vs Team 4</td>
-  </tr>
-    <tr>
-    <td>Match 5</td>
-        <td>Day 2</td>
-        <td>Will be updated</td>
-        <td>Will be updated</td>
-        <td>Team 1 vs Team 4</td>
-  </tr>
-    <tr>
-    <td>Match 6</td>
-        <td>Day 2</td>
-        <td>Will be updated</td>
-        <td>Will be updated</td>
-        <td>Team 2 vs Team 3</td>
-  </tr>
-      <td>Final</td>
-        <td>Day 2</td>
-        <td>Will be updated</td>
-        <td>Will be updated</td>
-        <td>League Winner vs Legue Runner-Up</td>
-  </tr>
-</table>
+      <th>Category</th>
+      <th>Court</th>
+      <th>Date & Time</th>
+    </tr>
+    <tr><td>Men's Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 8:15 AM</td></tr>
+    <tr><td>Men's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 8:15 AM</td></tr>
+    <tr><td>Women's Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 8:30 AM</td></tr>
+    <tr><td>Women's Doubles 2</td><td>Court 1</td><td>19th December 2025 @ 8:45 AM</td></tr>
+    <tr><td>Mixed Doubles 1</td><td>Court 2</td><td>19th December 2025 @ 8:45 AM</td></tr>
+    <tr><td>Mixed Doubles 2</td><td>Court 1</td><td>19th December 2025 @ 9:00 AM</td></tr>
+    <tr><td>Mixed Doubles 3</td><td>Court 1</td><td>19th December 2025 @ 9:15 AM</td></tr>
+  </table>
+</div>
 
+<!-- Duplicate similar blocks for other matches -->
+<div class="match-block">
+  <div class="match-header">Match 2: Team 3 vs Team 4</div>
+  <table class="match-table">
+    <tr>
+      <th>Category</th>
+      <th>Court</th>
+      <th>Date & Time</th>
+    </tr>
+    <tr><td>Men's Doubles 1</td><td>Court 3</td><td>19th December 2025 @ 8:15 AM</td></tr>
+    <tr><td>Men's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 8:30 AM</td></tr>
+    <tr><td>Women's Doubles 1</td><td>Court 3</td><td>19th December 2025 @ 8:30 AM</td></tr>
+    <tr><td>Women's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 8:45 AM</td></tr>
+    <tr><td>Mixed Doubles 1</td><td>Court 2</td><td>19th December 2025 @ 9:00 AM</td></tr>
+    <tr><td>Mixed Doubles 2</td><td>Court 3</td><td>19th December 2025 @ 9:00 AM</td></tr>
+    <tr><td>Mixed Doubles 3</td><td>Court 2</td><td>19th December 2025 @ 9:15 AM</td></tr>
+  </table>
+</div>
+
+<div class="match-block">
+  <div class="match-header">Match 1: Team 1 vs Team 3</div>
+  <table class="match-table">
+    <tr>
+      <th>Category</th>
+      <th>Court</th>
+      <th>Date & Time</th>
+    </tr>
+    <tr><td>Men's Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 9:30 AM</td></tr>
+    <tr><td>Men's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 9:30 AM</td></tr>
+    <tr><td>Women's Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 9:45 AM</td></tr>
+    <tr><td>Women's Doubles 2</td><td>Court 1</td><td>19th December 2025 @ 10:00 AM</td></tr>
+    <tr><td>Mixed Doubles 1</td><td>Court 2</td><td>19th December 2025 @ 10:15 AM</td></tr>
+    <tr><td>Mixed Doubles 2</td><td>Court 1</td><td>19th December 2025 @ 10:15 AM</td></tr>
+    <tr><td>Mixed Doubles 3</td><td>Court 1</td><td>19th December 2025 @ 10:30 AM</td></tr>
+  </table>
+</div>
+
+<div class="match-block">
+  <div class="match-header">Match 2: Team 2 vs Team 4</div>
+  <table class="match-table">
+    <tr>
+      <th>Category</th>
+      <th>Court</th>
+      <th>Date & Time</th>
+    </tr>
+    <tr><td>Men's Doubles 1</td><td>Court 3</td><td>19th December 2025 @ 9:30 AM</td></tr>
+    <tr><td>Men's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 8:30 AM</td></tr>
+    <tr><td>Women's Doubles 1</td><td>Court 3</td><td>19th December 2025 @ 9:45 AM</td></tr>
+    <tr><td>Women's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 9:45 AM</td></tr>
+    <tr><td>Mixed Doubles 1</td><td>Court 2</td><td>19th December 2025 @ 10:00 AM</td></tr>
+    <tr><td>Mixed Doubles 2</td><td>Court 3</td><td>19th December 2025 @ 10:15 AM</td></tr>
+    <tr><td>Mixed Doubles 3</td><td>Court 2</td><td>19th December 2025 @ 10:30 AM</td></tr>
+  </table>
+</div>
+
+<div class="match-block">
+  <div class="match-header">Match 1: Team 1 vs Team 4</div>
+  <table class="match-table">
+    <tr>
+      <th>Category</th>
+      <th>Court</th>
+      <th>Date & Time</th>
+    </tr>
+    <tr><td>Men's Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 15:30 PM</td></tr>
+    <tr><td>Men's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 15:30 PM</td></tr>
+    <tr><td>Women's Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 15:45 AM</td></tr>
+    <tr><td>Women's Doubles 2</td><td>Court 1</td><td>19th December 2025 @ 16:00 AM</td></tr>
+    <tr><td>Mixed Doubles 1</td><td>Court 2</td><td>19th December 2025 @ 16:15 AM</td></tr>
+    <tr><td>Mixed Doubles 2</td><td>Court 1</td><td>19th December 2025 @ 16:15 AM</td></tr>
+    <tr><td>Mixed Doubles 3</td><td>Court 1</td><td>19th December 2025 @ 16:30 AM</td></tr>
+  </table>
+</div>
+
+<div class="match-block">
+  <div class="match-header">Match 2: Team 2 vs Team 3</div>
+  <table class="match-table">
+    <tr>
+      <th>Category</th>
+      <th>Court</th>
+      <th>Date & Time</th>
+    </tr>
+    <tr><td>Men's Doubles 1</td><td>Court 3</td><td>19th December 2025 @ 15:30 PM</td></tr>
+    <tr><td>Men's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 8:30 AM</td></tr>
+    <tr><td>Women's Doubles 1</td><td>Court 3</td><td>19th December 2025 @ 15:45 AM</td></tr>
+    <tr><td>Women's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 15:45 AM</td></tr>
+    <tr><td>Mixed Doubles 1</td><td>Court 2</td><td>19th December 2025 @ 16:00 AM</td></tr>
+    <tr><td>Mixed Doubles 2</td><td>Court 3</td><td>19th December 2025 @ 16:15 AM</td></tr>
+    <tr><td>Mixed Doubles 3</td><td>Court 2</td><td>19th December 2025 @ 16:30 AM</td></tr>
+  </table>
+</div>
+
+<div class="match-block">
+  <div class="match-header">Final: League Winers vs Runner-Up</div>
+  <table class="match-table">
+    <tr>
+      <th>Category</th>
+      <th>Court</th>
+      <th>Date & Time</th>
+    </tr>
+    <tr><td>Men's Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 20:30 PM</td></tr>
+    <tr><td>Men's Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 20:30 AM</td></tr>
+    <tr><td>Women's Doubles 1</td><td>Court 3</td><td>19th December 2025 @ 20:30 AM</td></tr>
+    <tr><td>Women's Doubles 2</td><td>Court 1</td><td>19th December 2025 @ 20:45 AM</td></tr>
+    <tr><td>Mixed Doubles 1</td><td>Court 1</td><td>19th December 2025 @ 21:00 AM</td></tr>
+    <tr><td>Mixed Doubles 2</td><td>Court 2</td><td>19th December 2025 @ 21:15 AM</td></tr>
+    <tr><td>Mixed Doubles 3</td><td>Court 3</td><td>19th December 2025 @ 21:30 AM</td></tr>
+  </table>
 </div>
 
 
+<!-- Add more match-blocks for remaining matches as needed -->
+
+</div>
 </body>
 </html>
