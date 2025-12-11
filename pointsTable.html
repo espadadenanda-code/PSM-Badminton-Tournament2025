@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PSM Badminton Tournament 2025 - Points Table</title>
+
+<style>
+/* ================= BODY ================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+}
+
+/* ================= HEADER ================= */
+.header-bar {
+  background: linear-gradient(135deg, #002f6c, #005eff);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 90px;
+  margin-right: 20px;
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ================= NAV ================= */
+.navbar {
+  background: rgba(0,0,0,0.35);
+  padding: 12px 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: #00b4ff;
+  color: #002f6c;
+}
+
+/* ================= MAIN CONTENT ================= */
+.container {
+  background: white;
+  color: black;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+h2 {
+  text-align: center;
+  color: #003f7f;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+/* ================= POINTS TABLE ================= */
+.points-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.points-table th,
+.points-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.points-table th {
+  background: #dbeaff;
+  color: #003f7f;
+  font-weight: bold;
+}
+
+.points-table tr:nth-child(even) {
+  background: #f1f7ff;
+}
+
+.points-table tr:nth-child(1),
+.points-table tr.top-team {
+  background: #ffd70066; /* highlight top teams */
+}
+
+.team-name {
+  font-weight: bold;
+  color: #003f7f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #e3eeff;
+  padding: 5px;
+}
+
+/* ================= NOTE ================= */
+.note {
+  margin-top: 20px;
+  background: #e0f0ff;
+  color: #003f7f;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header-bar">
+  <div class="header-left">
+    <img src="psm_logo.png" alt="Logo">
+    <div class="header-title">PSM Badminton Tournament 2025</div>
+  </div>
+</div>
+
+<!-- ===== NAV BAR ===== -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="teams.html">Teams</a>
+  <a href="matchSchedule.html">Schedule</a>
+  <a href="matchScore.html">Results</a>
+  <a href="pointsTable.html">Points Table</a>
+  <a href="rules.html">Rules</a>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="container">
+<h2>Points Table</h2>
+
+<table class="points-table" id="pointsTable">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Team</th>
+      <th>Matches Played</th>
+      <th>Won</th>
+      <th>Lost</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td class="team-name"><img src="LOGO/AA hardata.png" alt="HARDATA Logo" class="team-logo">HARDATA</td>
+      <td>0</td><td>0</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="team-name"><img src="LOGO/EE LIVE-FEED.png" alt="LIVE-FEED Logo" class="team-logo">LIVE FEED</td>
+      <td>0</td><td>0</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="team-name"><img src="LOGO/C-FOCUSOUT.png" alt="FOCUSOUT Logo" class="team-logo">FOCUS OUT</td>
+      <td>0</td><td>0</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="team-name"><img src="LOGO/F-APPRAISAL.png" alt="APPRAISAL Logo" class="team-logo">APPRAISAL</td>
+      <td>0</td><td>0</td><td>0</td><td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  Note: Teams ranked 1 and 2 will advance to the Final.
+</div>
+</div>
+
+<script>
+// ================= SORT TABLE BY POINTS =================
+window.onload = function() {
+  const table = document.getElementById('pointsTable').getElementsByTagName('tbody')[0];
+  let rows = Array.from(table.rows);
+
+  // Sort by Points (last column) descending
+  rows.sort((a, b) => parseInt(b.cells[5].innerText) - parseInt(a.cells[5].innerText));
+
+  // Re-assign rank and mark top 2 teams
+  rows.forEach((row, index) => {
+    row.cells[0].innerText = index + 1;
+    row.classList.remove('top-team');
+    if(index < 2) row.classList.add('top-team'); // highlight top 2
+    table.appendChild(row);
+  });
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PSM Badminton Tournament 2025</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+}
+
+/* Header */
+.header-bar {
+  background: linear-gradient(135deg, #002f6c, #005eff);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.header-bar img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0,0,0,0.35);
+  padding: 12px 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: #00b4ff;
+  color: #002f6c;
+}
+
+/* Main Container */
+.container {
+  background: white;
+  color: black;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+h2 {
+  text-align: center;
+  color: #003f7f;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Teams */
+.team {
+  border: 3px solid #003f7f;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.team-title {
+  background: #0072ff;
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.team-body {
+  padding: 20px;
+  background: #f7fbff;
+  text-align: center;
+}
+
+.team-logo {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px auto 20px;
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #e3eeff;
+  padding: 10px;
+}
+
+.team-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #003f7f;
+}
+
+/* Player grid */
+/* Player grid */
+.players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.player-box {
+  background: white;
+  border: 2px solid #0072ff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+}
+
+.player-box img {
+  width: 100%;
+  height: 220px;       /* increase height */
+  object-fit: contain;  /* ensure full face visible */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header-bar">
+  <img src="psm_logo.png" alt="PSM Logo">
+  <div class="header-title">PSM Badminton Tournament 2025</div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="teams.html">Teams</a>
+  <a href="matchSchedule.html">Schedule</a>
+  <a href="matchScore.html">Results</a>
+  <a href="pointsTable.html">Points Table</a>
+  <a href="rules.html">Rules</a>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+  <h2>Teams & Players</h2>
+
+  <!-- TEAM 1 -->
+  <div class="team">
+    <div class="team-title">HARDATA</div>
+    <div class="team-body">
+      <img src="LOGO/AA hardata.png" alt="HARDATA Logo" class="team-logo">
+
+      <div class="team-section-title">Male Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/0067 Mahdhy Faruzna.png" alt="Mahdee Faroozaan">Mahdee Faroozaan</div>
+        <div class="player-box"><img src="playerImages/0134 Ahmed Mohamed (foto).png" alt="Ahmed Mohamed">Ahmed Mohamed</div>
+        <div class="player-box"><img src="playerImages/shagor Shil 1042.jpg" alt="Shagor Shil">Shagor Shil</div>
+        <div class="player-box"><img src="playerImages/0518 Zian Ibrahim.png" alt="Zian Ibrahim">Zian Ibrahim</div>
+      </div>
+
+      <div class="team-section-title">Female Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/placeholder.png" alt="Hawwa Aisha Shareef">Hawwa Aisha Shareef</div>
+        <div class="player-box"><img src="playerImages/327 Fathimath Hudha.jpg" alt="Fathimath Hudha">Fathimath Hudha</div>
+        <div class="player-box"><img src="playerImages/thumbnail_1030 Mariyam Alya .jpg" alt="Mariyam Alya">Mariyam Alya</div>
+        <div class="player-box"><img src="playerImages/zulfa backrem.png" alt="Zulfa Abdul Raheem">Zulfa Abdul Raheem</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM 2 -->
+  <div class="team">
+    <div class="team-title">LIVE FEED</div>
+    <div class="team-body">
+      <img src="LOGO/EE LIVE-FEED.png" alt="LIVE FEED Logo" class="team-logo">
+
+      <div class="team-section-title">Male Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/0065 Ahmed Athoof.png" alt="Ahmed Athoof">Ahmed Athoof</div>
+        <div class="player-box"><img src="playerImages/0012 Ali Hilmy.png" alt="Ali Hilmy">Ali Hilmy</div>
+        <div class="player-box"><img src="playerImages/0390 Mohamed Jumail.png" alt="Mohamed Jumail">Mohamed Jumail</div>
+        <div class="player-box"><img src="playerImages/0501 Ismail Abdul Raheem.png" alt="Ismail Abdul Raheem">Ismail Abdul Raheem</div>
+      </div>
+
+      <div class="team-section-title">Female Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/0407 Nadheema Mohamed.png" alt="Nadheema Mohamed">Nadheema Mohamed</div>
+        <div class="player-box"><img src="playerImages/Wafeega Hamid.png" alt="Wafeega Hamid">Wafeega Hamid</div>
+        <div class="player-box"><img src="playerImages/0125 Fathimath Zumla.png" alt="Fathimath Zumla">Fathimath Zumla</div>
+        <div class="player-box"><img src="playerImages/0197 Ashida Abdul Kareem.png" alt="Ashida Abdul Kareem">Ashida Abdul Kareem</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM 3 -->
+  <div class="team">
+    <div class="team-title">APPRAISAL</div>
+    <div class="team-body">
+      <img src="LOGO/F-APPRAISAL.png" alt="APPRAISAL Logo" class="team-logo">
+
+      <div class="team-section-title">Male Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/0020 Mohamed Rameez.png" alt="Mohamed Rameez">Mohamed Rameez</div>
+        <div class="player-box"><img src="playerImages/0127 ibrahim shafraz.png" alt="Ibrahim Shafraz">Ibrahim Shafraz</div>
+        <div class="player-box"><img src="playerImages/0050 Ali Waheed.png" alt="Ali Waheed">Ali Waheed (Tech)</div>
+        <div class="player-box"><img src="playerImages/placeholder.png" alt="Shahin Miah">Shahin Miah</div>
+      </div>
+
+      <div class="team-section-title">Female Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/0065 Ahmed Athoof.png" alt="Aishath Naseem">Aishath Naseem</div>
+        <div class="player-box"><img src="playerImages/placeholder.png" alt="Aishath Lam'aa Hassan">Aishath Lam'aa Hassan</div>
+        <div class="player-box"><img src="playerImages/0071 Fathimath Shifa.png" alt="Fathimath Shifa">Fathimath Shifa</div>
+        <div class="player-box"><img src="playerImages/0052 Aishath Hany.png" alt="Aishath Hany">Aishath Hany</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM 4 -->
+  <div class="team">
+    <div class="team-title">FOCUS OUT</div>
+    <div class="team-body">
+      <img src="LOGO/C-FOCUSOUT.png" alt="FOCUS OUT Logo" class="team-logo">
+
+      <div class="team-section-title">Male Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/0156 Ismail Rameez.png" alt="Ismail Rameez">Ismail Rameez</div>
+        <div class="player-box"><img src="playerImages/0136 Ismail Ashraf.png" alt="Ismail Ashraf">Ismail Ashraf</div>
+        <div class="player-box"><img src="playerImages/1036 Azumee Adam Naseer.jpg" alt="Azumee Adam Naseer">Azumee Adam Naseer</div>
+        <div class="player-box"><img src="playerImages/Hussain Ameen Naseer.png" alt="Hussain Ameen Naseer">Hussain Ameen Naseer</div>
+      </div>
+
+      <div class="team-section-title">Female Players</div>
+      <div class="players">
+        <div class="player-box"><img src="playerImages/0150 Fathimath Waheedha.png" alt="Fathimath Waheedha">Fathimath Waheedha</div>
+        <div class="player-box"><img src="playerImages/0124 Aminath Abdulla.png" alt="Aminath Abdulla">Aminath Abdulla</div>
+        <div class="player-box"><img src="playerImages/0466 Mariyam Shaneeza.png" alt="Mariyam Shaneeza">Mariyam Shaneeza</div>
+        <div class="player-box"><img src="playerImages/0043 Waheeda Abdul rahman.png" alt="Waheeda Abdul Rahman">Waheeda Abdul Rahman</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
